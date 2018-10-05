@@ -8,6 +8,10 @@ from two_layer_net import TwoLayerNet
 
 # データの読み込み
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
+# x_train・・・(60000, 784)
+# t_train・・・(60000, 10)
+# x_test・・・(10000, 784)
+# t_test・・・(10000, 10)
 
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
